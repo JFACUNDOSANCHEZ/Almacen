@@ -5,6 +5,7 @@ const productos = [
       categoria: 'Categoría 1',
       descripcion: 'Descripción del producto 1',
       precio: 10.99,
+      promo: true,
       img: 'https://ardiaprod.vtexassets.com/arquivos/ids/262380/Mayonesa-Natura-250-Ml_1.jpg?v=638322364138370000'
     },
     {
@@ -13,6 +14,7 @@ const productos = [
       categoria: 'Categoría 2',
       descripcion: 'Descripción del producto 2',
       precio: 19.99,
+      promo: false,
       img:'https://www.almacenfamily.com/productos/7790310982426-59-5eff584e13526.jpg'
     },
     {

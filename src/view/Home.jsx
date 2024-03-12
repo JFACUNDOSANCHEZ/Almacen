@@ -24,13 +24,16 @@ console.log(productos);
 
     <Carousel></Carousel>
    </div>
+    <br /><br /><br />
       <div className='flex justify-center '>
         <SearchBar searchTerm={searchTerm}  onSearchTermChange={handleSearchTermChange} ></SearchBar>
+
       </div>
-      <div className="flex justify-center space-x-4 p-5">
-      <Button text="Limpieza" onClick={() => handleFilterClick('Limpieza')} className="flex-1" />
-        <Button text="Bebidas" onClick={() => handleFilterClick('Bebidas')} className="flex-1" />
-        <Button text="Lácteos" onClick={() => handleFilterClick('Lácteos')} className="flex-1" />
+      <br />
+      <div className="flex justify-center space-x-4 p-5 md:flex">
+      <Button text="Limpieza" onClick={() => handleFilterClick('Limpieza')} img='https://www.coca-colaentuhogar.com/media/wysiwyg/refrescos_mob.png' className="flex-1" />
+        <Button text="Bebidas" onClick={() => handleFilterClick('Bebidas')} img='https://globalservices.com.pe/blog/public/postimg/global-services-limpieza-20190913180100.png' className="flex-1" />
+        <Button text="Lácteos" onClick={() => handleFilterClick('Lácteos')} img='https://static8.depositphotos.com/1063437/871/i/450/depositphotos_8711334-stock-photo-loaf-of-bread-isolated-on.jpg' className="flex-1" />
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {filteredProductos.map(p => {
