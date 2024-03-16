@@ -13,10 +13,10 @@ const Carousel = () => {
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true, // Habilitar la reproducción automática
-        autoplaySpeed: 3000, // Intervalo de cambio automático en milisegundos (por ejemplo, 3 segundos)
+        autoplaySpeed: 4000, // Intervalo de cambio automático en milisegundos (por ejemplo, 3 segundos)
       };
   return (
-    <div className="h-64 mb-8 md:h-[50%] ">
+    <div className="h-34 mb-8 md:h-[40%] ">
 
     <Slider {...settings}>
       <div>
@@ -25,9 +25,7 @@ const Carousel = () => {
       <div>
         <img src="https://i.blogs.es/9a5723/mapssemaforos/450_1000.webp" alt="Imagen 2"  className='w-full h-64 mb-8 md:h-84 object-cover'/>
       </div>
-      {/* <div>
-        <img src="https://www.clarin.com/img/2020/10/08/H93Bbeq1f_1200x0__1.jpg" alt="Imagen 3" className='w-full h-64 mb-8 md:h-84 object-cover' />
-      </div> */}
+  
     </Slider>
     </div>
   );
