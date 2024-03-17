@@ -14,7 +14,7 @@ const Card = ({ producto, addToCart }) => {
           <img src={producto.img} alt="" className="w-32 h-32  md:w-24 md:h-24 object-contain" /> {/* Establece un tamaño fijo para la imagen */}
         </div>
         <h3 className="h-8 overflow-hidden">{producto.title}</h3> {/* Establece una altura fija para el título */}
-        <h3 className="text-lg font-semibold text-green-700 mb-3">$ {producto.precio}</h3>
+        <h3 className="text-lg font-semibold text-green-700 mb-3">$ {producto.precio} <span className='text-black text-1xl font-light'>{producto.medicion} </span></h3>
       </div>
     </div>
   </div>
