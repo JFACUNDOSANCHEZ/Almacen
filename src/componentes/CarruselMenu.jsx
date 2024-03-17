@@ -11,7 +11,7 @@ const CarouselMenu = () => {
         rtl: true,
         dots: false,
         infinite: true,
-        speed: 1000, // Ajusta la velocidad a un valor más bajo
+        speed: 6000, // Ajusta la velocidad a un valor más bajo
         slidesToShow: 3,
         slidesToScroll: 1,
         autoplay: true,
