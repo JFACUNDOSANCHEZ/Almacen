@@ -20,7 +20,7 @@ const CarouselMenu = () => {
     };
 
 
-    const shadowColors = ['shadow-md shadow-green-200', 'shadow-md shadow-blue-200', 'shadow-md shadow-red-200', 'shadow-md shadow-yellow-200', 'shadow-md shadow-indigo-200'];
+    const shadowColors = ['shadow-md shadow-green-600', 'shadow-md shadow-blue-600', 'shadow-md shadow-red-600', 'shadow-md shadow-yellow-600', 'shadow-md shadow-indigo-600'];
 
     // Función para obtener un color de sombra aleatorio de la matriz
     const getRandomShadowColor = () => {

@@ -53,7 +53,7 @@ const Home = () => {
         </div>
       </div>
       <br />
-      <div className=' w-screen'>
+      <div >
 
         <CarouselMenu></CarouselMenu>
       </div>
