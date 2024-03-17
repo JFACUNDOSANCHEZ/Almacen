@@ -29,31 +29,34 @@ const Home = () => {
   };
   console.log(productos);
   return (
-    <div className=' w-[95%] justify-center mx-auto overflow-hidden max-w-screen-xl'>
+    <div className=' w-[98%] justify-center mx-auto overflow-hidden max-w-screen-xl'>
       <div >
         <Nav></Nav>
 
         <Carousel></Carousel>
       </div>
 
-      <div className='flex justify-center w-[95%] relative'>
+      <div className='flex justify-center w-[97%] relative'>
         <SearchBar searchTerm={searchTerm} onSearchTermChange={handleSearchTermChange} />
-<div className=''>
+        <div className=''>
 
-        <Link to={''}>
-          <button className="relative">
-            {!cartItems.length ? '' :
-              <span className="absolute top-0 right-0 bg-red-500 text-white rounded-full w-5 h-5 text-xs flex items-center justify-center">
-                {cartItems.length}
-              </span>
-            }
-            <img src="https://cdn-icons-png.flaticon.com/512/3081/3081900.png" className='w-12 h-25' alt="" />
-          </button>
-        </Link>
-            </div>
+          <Link to={''}>
+            <button className="relative">
+              {!cartItems.length ? '' :
+                <span className="absolute top-0 right-0 bg-red-500 text-white rounded-full w-5 h-5 text-xs flex items-center justify-center">
+                  {cartItems.length}
+                </span>
+              }
+              <img src="https://cdn-icons-png.flaticon.com/512/3081/3081900.png" className='w-12 h-25' alt="" />
+            </button>
+          </Link>
+        </div>
       </div>
       <br />
-      <CarouselMenu></CarouselMenu>
+      <div className=' w-screen'>
+
+        <CarouselMenu></CarouselMenu>
+      </div>
       {
         filteredProductos.length === 0 ?
           <NotFound />

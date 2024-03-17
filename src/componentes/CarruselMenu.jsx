@@ -6,34 +6,17 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 
 const CarouselMenu = () => {
-    const PrevArrow = (props) => {
-        const { onClick } = props;
-        return (
-            <button className="slick-arrow slick-prev" onClick={onClick}>
-                <FontAwesomeIcon icon={faChevronLeft} />
-            </button>
-        );
-    };
-
-    const NextArrow = (props) => {
-        const { onClick } = props;
-        return (
-            <button className="slick-arrow slick-next" onClick={onClick}>
-                <FontAwesomeIcon icon={faChevronRight} />
-            </button>
-        );
-    };
+    
     const settings = {
         rtl: true,
         dots: false,
         infinite: true,
-        speed: 500,
-        slidesToShow: 3, // Mostrar tres elementos por slide
+        speed: 1000, // Ajusta la velocidad a un valor más bajo
+        slidesToShow: 4,
         slidesToScroll: 1,
-        autoplay: true, // Habilitar la reproducción automática
-        autoplaySpeed: 3000, // Intervalo de cambio automático en milisegundos (por ejemplo, 3 segundos)
-        prevArrow: <PrevArrow />,
-        nextArrow: <NextArrow />,
+        autoplay: true,
+        autoplaySpeed: 3000, // Aumenta el intervalo entre los cambios
+        pauseOnHover: true // Pausar la reproducción automática cuando el mouse está encima
     };
 
 
