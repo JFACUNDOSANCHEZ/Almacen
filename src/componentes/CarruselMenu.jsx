@@ -24,6 +24,7 @@ const CarouselMenu = () => {
         );
     };
     const settings = {
+        rtl: true,
         dots: false,
         infinite: true,
         speed: 500,
@@ -37,7 +38,7 @@ const CarouselMenu = () => {
 
 
     return (
-        <div className="mb-8 font-bold ">
+        <div className=" font-bold ">
         
 
             <Slider {...settings}>

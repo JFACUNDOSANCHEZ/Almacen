@@ -20,7 +20,7 @@ const Carousel = () => {
 
     <Slider {...settings}>
       <div>
-        <img src="https://www.latinspots.com/files/notas/Gnota_37661.jpg" alt="Imagen 1" className='  w-full h-64 mb-8 md:h-84 object-cover' />
+        <img src="https://www.branca.com.ar/wp-content/uploads/2021/09/Fernet-Branca-Soy-unico_Highlights-01-940x528.png" alt="Imagen 1" className='  w-full h-64 mb-8 md:h-84 object-cover' />
       </div>
       <div>
         <img src="https://i.ytimg.com/vi/N1NQuyJnWIk/sddefault.jpg" alt="Imagen 2"  className='w-full h-64 mb-8 md:h-84 object-cover'/>
