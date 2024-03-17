@@ -15,7 +15,7 @@ const CarouselMenu = () => {
         slidesToShow: 3,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 3000, // Aumenta el intervalo entre los cambios
+        autoplaySpeed: 1000, // Aumenta el intervalo entre los cambios
         pauseOnHover: true // Pausar la reproducción automática cuando el mouse está encima
     };
 
