@@ -14,7 +14,7 @@ export default function MenuNav() {
     <ul className="absolute p-10 w-[80%] rounded-xl mx-auto inset-x-0 bg-white text-center top-24 grid gap-6 font-bold md:static md:translate-x-0 md:bg-transparent md:w-max md:grid-flow-col md:p-0 ">
       <li>
         <Link to={'/ubi'}>
-        <a href="#">Ubicacion</a>
+      Ubicacion
         </Link>
         </li>
       <li><a href="#">Contactanos</a></li>

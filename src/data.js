@@ -24,6 +24,27 @@ const productos = [
       descripcion: 'Descripción del producto 3',
       precio: 15.50,
       img:'https://media.f2h.shop/media/catalog/product/cache/ab45d104292f1bb63d093e6be8310c97/i/m/imageedit_3_4516158279.png'
+    },    {
+      id: 4,
+      title: 'Lavandina',
+      categoria: 'Categoría 3',
+      descripcion: 'Descripción del producto 4',
+      precio: 15.50,
+      img:'https://arcencohogar.vtexassets.com/arquivos/ids/297412-800-800?v=637665760449770000&width=800&height=800&aspect=true'
+    },   {
+      id: 5,
+      title: 'Preservativo',
+      categoria: 'Categoría 3',
+      descripcion: 'Descripción del producto 5',
+      precio: 15.50,
+      img:'https://farmacityar.vtexassets.com/arquivos/ids/238781-800-auto?v=638144009985070000&width=800&height=auto&aspect=true'
+    }, {
+      id: 65,
+      title: 'Cebolla',
+      categoria: 'Categoría 3',
+      descripcion: 'Descripción del producto 5',
+      precio: 15.50,
+      img:'https://5aldia.cl/wp-content/uploads/2018/03/cebolla.jpg'
     },
     // Agrega más productos según sea necesario
   ];

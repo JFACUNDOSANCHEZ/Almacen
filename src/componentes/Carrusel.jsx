@@ -16,7 +16,7 @@ const Carousel = () => {
         autoplaySpeed: 4000, // Intervalo de cambio automático en milisegundos (por ejemplo, 3 segundos)
       };
   return (
-    <div className="h-34 mb-8 md:h-[40%] ">
+    <div className="h-34 mb-8 md:h-[30%] ">
 
     <Slider {...settings}>
       <div>
