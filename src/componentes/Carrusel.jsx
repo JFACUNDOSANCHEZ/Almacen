@@ -20,12 +20,17 @@ const Carousel = () => {
 
     <Slider {...settings}>
       <div>
-        <img src="https://www.shoppingpatagonia.com.ar/wp-content/uploads/2020/06/Kiosco-Shopping-Patagonia.jpg" alt="Imagen 1" className='  w-full h-64 mb-8 md:h-84 object-cover' />
+        <img src="https://www.latinspots.com/files/notas/Gnota_37661.jpg" alt="Imagen 1" className='  w-full h-64 mb-8 md:h-84 object-cover' />
       </div>
       <div>
-        <img src="https://i.blogs.es/9a5723/mapssemaforos/450_1000.webp" alt="Imagen 2"  className='w-full h-64 mb-8 md:h-84 object-cover'/>
+        <img src="https://i.ytimg.com/vi/N1NQuyJnWIk/sddefault.jpg" alt="Imagen 2"  className='w-full h-64 mb-8 md:h-84 object-cover'/>
+      </div> 
+       <div>
+        <img src="https://www.progresando.com/wp-content/uploads/2022/03/714SB5qQtXL._AC_SL1500_.jpg" alt="Imagen 2"  className='w-full h-64 mb-8 md:h-84 object-cover'/>
       </div>
-  
+      <div>
+        <img src="https://thefoodtech.com/wp-content/uploads/2022/12/Packaging-cervezas-Quilmes.jpg" alt="Imagen 2"  className='w-full h-64 mb-8 md:h-84 object-cover'/>
+      </div>
     </Slider>
     </div>
   );
