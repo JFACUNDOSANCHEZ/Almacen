@@ -45,6 +45,28 @@ const productos = [
       descripcion: 'Descripción del producto 5',
       precio: 15.50,
       img:'https://5aldia.cl/wp-content/uploads/2018/03/cebolla.jpg'
+    }, {
+      id: 36,
+      title: 'Vino',
+      categoria: 'Categoría 3',
+      descripcion: 'Descripción del producto 5',
+      precio: 15.50,
+      img:'https://images.vivino.com/thumbs/puksUxTPSpGFGgYm27aEaw_pb_x600.png'
+    }, {
+      id: 436,
+      title: 'Cigarrillo',
+      categoria: 'Categoría 3',
+      descripcion: 'Descripción del producto 5',
+      precio: 15.50,
+      img:'https://www.almacendelsol.com.ar/wp-content/uploads/2021/09/77976994.jpg'
+    },
+    {
+      id: 4336,
+      title: 'Salame',
+      categoria: 'Categoría 3',
+      descripcion: 'Descripción del producto 5',
+      precio: 15.50,
+      img:'https://dcdn.mitiendanube.com/stores/001/147/470/products/salame-milan1-2d3402671455da5f9b16038207250983-640-0.jpg'
     },
     // Agrega más productos según sea necesario
   ];
