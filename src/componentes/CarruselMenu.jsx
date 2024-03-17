@@ -14,7 +14,7 @@ const CarouselMenu = () => {
             </button>
         );
     };
-    
+
     const NextArrow = (props) => {
         const { onClick } = props;
         return (
@@ -39,16 +39,16 @@ const CarouselMenu = () => {
 
     return (
         <div className=" font-bold ">
-        
 
-            <Slider {...settings}>
-            <div className="     rounded-full text-gray-600 text-center hover:scale-150 transition-transform duration-300">Lacteos</div>
-                <div className=" rounded-full text-gray-600 text-center hover:scale-150 transition-transform duration-300">Gaseosa</div>
-                <div className=" rounded-full text-gray-600 text-center hover:scale-150 transition-transform duration-300">Cigarrillos</div>
-                <div className=" rounded-full text-gray-600 text-center hover:scale-150 transition-transform duration-300">Limpieza</div>
-                <div className=" rounded-full text-gray-600 text-center hover:scale-150 transition-transform duration-300">Vinos</div>
-                <div className=" rounded-full text-gray-600 text-center hover:scale-150 transition-transform duration-300">Fiambre</div>
-         
+
+            <Slider {...settings} >
+                <div> <p className=' bg-slate-100 border gap-5 m-5 text-center rounded-full text-gray-700  shadow-md shadow-green-200'> Lacteos</p>     </div>
+                <div> <p className=' bg-slate-100 border gap-5 m-5 text-center rounded-full text-gray-700  shadow-md shadow-green-200'> Gaseosa</p>     </div>
+                <div> <p className=' bg-slate-100 border gap-5 m-5 text-center rounded-full text-gray-700  shadow-md shadow-green-200'> Cigarrillos</p>     </div>
+                <div> <p className=' bg-slate-100 border gap-5 m-5 text-center rounded-full text-gray-700  shadow-md shadow-green-200'> Limpieza</p>     </div>
+                <div> <p className=' bg-slate-100 border gap-5 m-5 text-center rounded-full text-gray-700  shadow-md shadow-green-200'> Vinos</p>     </div>
+                <div> <p className=' bg-slate-100 border gap-5 m-5 text-center rounded-full text-gray-700  shadow-md shadow-green-200'> Fiambre</p>     </div>
+
             </Slider>
         </div>
     );
