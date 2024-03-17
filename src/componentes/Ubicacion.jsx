@@ -1,4 +1,5 @@
 import React from 'react'
+import Nav from './Nav';
 import GoogleMapReact from 'google-map-react';
 const AnyReactComponent = ({ text }) => <div>{text}</div>;
 
@@ -15,31 +16,30 @@ export default function Ubicacion() {
 
 
         <div className="h-screen">
-            <div className="h-1/2 relative">
-                <img className="absolute inset-0 w-full h-full object-cover" src="https://www.mibolsillo.com/__export/1701123333399/sites/debate/img/2023/11/27/maps.png_903948830.png" alt="" />
-            </div>
-            <div className="text-center">
-                <div className="flex justify-center">
-                    <img src="https://i.pinimg.com/736x/d2/14/f2/d214f23ff31bfbd0cded32db9f957b7e.jpg" alt="Mountain" className="h-36" />
-                </div>
-                <h1 className="text-3xl font-bold">El Andino</h1>
-
-                    <p className="mt-4 font-medium">
-                <div>
-                        <span className='bg-blue-500 w-5 mt-4  p-2 rounded-full font-bold'>
-                            Ubicacion:
-                        </span>
-                </div>
-                        Calle Congreso Nacional 565, frente a Plaza Los Amigos</p>
-                <p className="mt-6 font-medium">
-                    <div>
-
-                        <span className='bg-blue-500  p-2 rounded-full font-bold'>
-                            Horario:
-                        </span>
-                    </div>
-                    Calle Congreso Nacional 565, frente a Plaza Los Amigos</p>
-            </div>
+<Nav></Nav>
+        <div className="h-1/2 relative">
+          <img className="absolute inset-0 w-full h-full object-cover" src="https://www.mibolsillo.com/__export/1701123333399/sites/debate/img/2023/11/27/maps.png_903948830.png" alt="" />
         </div>
+        <div className="text-center">
+          <div className="flex justify-center">
+
+          </div>
+         <br />
+          <div className="flex flex-col justify-center items-center">
+            <div className="bg-gray-200 w-24 p-1 shadow-teal-700 shadow-sm rounded-full font-bold">
+              <span>Ubicación:</span>
+            </div>
+            <p className="mt-1 font-medium ml-2">
+              Calle Congreso Nacional 565 frente a Plaza Los Amigos
+            </p>
+            <div className="bg-gray-200 w-24 p-1 shadow-teal-700 shadow-sm rounded-full font-bold mt-6">
+              <span>Horario:</span>
+            </div>
+            <p className="mt-1 font-medium ml-2">
+              Lunes a Viernes: 9:00 AM - 6:00 PM
+            </p>
+          </div>
+        </div>
+      </div>
     );
 }

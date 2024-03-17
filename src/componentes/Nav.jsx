@@ -1,13 +1,16 @@
 import React from 'react'
 import MenuNav from './MenuNav';
+import { Link } from 'react-router-dom';
 const Nav = () => {
   return (
-    <nav className="py-3">
+    <nav className="py-0">
     <div className="container mx-auto flex items-center justify-between">
+      <Link to={'/'}>
       <div className="flex items-center">
-        <img src="https://i.pinimg.com/736x/d2/14/f2/d214f23ff31bfbd0cded32db9f957b7e.jpg" alt="Mountain" className="h-8 w-auto mr-2" />
-      <img src="https://r73.cooltext.com/rendered/cooltext454123310117814.png"  className="h-8 w-auto mr-2"  alt="" />
+        <img src="https://cdn.freebiesupply.com/logos/large/2x/kiosco-24-logo-png-transparent.png" alt="Mountain" className="h-24 w-32 mr-2" />
+      {/* <img src="https://r73.cooltext.com/rendered/cooltext454123310117814.png"  className="h-8 w-auto mr-2"  alt="" /> */}
       </div>
+      </Link>
 <MenuNav></MenuNav>
     </div>
   </nav>
