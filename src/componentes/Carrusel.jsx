@@ -16,7 +16,7 @@ const Carousel = () => {
         autoplaySpeed: 4000, // Intervalo de cambio automático en milisegundos (por ejemplo, 3 segundos)
       };
   return (
-    <div className="h-34 mb-8 md:h-[30%] ">
+    <div className="h-34 mb-8 md:h-[40%] ">
 
     <Slider {...settings}>
       <div>
@@ -26,10 +26,10 @@ const Carousel = () => {
         <img src="https://i.ytimg.com/vi/N1NQuyJnWIk/sddefault.jpg" alt="Imagen 2"  className='w-full h-64 mb-8 md:h-84 object-cover'/>
       </div> 
        <div>
-        <img src="https://www.progresando.com/wp-content/uploads/2022/03/714SB5qQtXL._AC_SL1500_.jpg" alt="Imagen 2"  className='w-full h-64 mb-8 md:h-84 object-cover'/>
+        <img src="https://www.on24.com.ar/wp-content/uploads/2018/05/PALADNI_HAMBRIENTOS-DE-GLORIA.jpg" alt="Imagen 2"  className='w-full h-64 mb-8 md:h-84 object-cover'/>
       </div>
       <div>
-        <img src="https://thefoodtech.com/wp-content/uploads/2022/12/Packaging-cervezas-Quilmes.jpg" alt="Imagen 2"  className='w-full h-64 mb-8 md:h-84 object-cover'/>
+        <img src='https://i.ytimg.com/vi/6-WPPEZrxds/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGBggZShWMA8=&rs=AOn4CLC5UEIq-z7tVes284mTekDehJNoDg' alt="Imagen 2"  className='w-full h-64 mb-8 md:h-84 object-cover'/>
       </div>
     </Slider>
     </div>
