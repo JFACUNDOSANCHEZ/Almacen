@@ -15,7 +15,7 @@ export default function Ubicacion() {
     return (
 
 
-        <div className="h-screen">
+        <div className="h-screen max-w-screen-xl mx-auto  w-[98%] ">
 <Nav></Nav>
         <div className="h-1/2 relative">
           <img className="absolute inset-0 w-full h-full object-cover" src="https://www.mibolsillo.com/__export/1701123333399/sites/debate/img/2023/11/27/maps.png_903948830.png" alt="" />
