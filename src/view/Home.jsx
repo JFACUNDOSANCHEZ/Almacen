@@ -61,7 +61,7 @@ const Home = () => {
       </div>
       <div className='w-screen'>
 
-<br />
+
        <h2 className=' font-bold text-2xl'>Bebidas</h2>
         <div className="flex overflow-x-auto">
           {categoria1.map(p => (
