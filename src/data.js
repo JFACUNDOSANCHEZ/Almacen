@@ -2,7 +2,7 @@ const productos = [
   {
     id: 2,
     title: 'Papas',
-    categoria: 'Categoría 2',
+    categoria: '2',
     descripcion: 'Descripción del producto 2',
     precio: 19.99,
     medicion: 'c/u',
@@ -12,7 +12,7 @@ const productos = [
   {
     id: 3,
     title: 'Gaseosa',
-    categoria: 'Categoría 1',
+    categoria: '1',
     descripcion: 'Descripción del producto 3',
     precio: 15.50,
     medicion: 'c/u',
@@ -21,7 +21,7 @@ const productos = [
     {
       id: 1,
       title: 'Mayonesa',
-      categoria: 'Categoría 1',
+      categoria: '2',
       descripcion: 'Descripción del producto 1',
       precio: 10.99,
       medicion: 'c/u',
@@ -31,7 +31,7 @@ const productos = [
       {
       id: 4,
       title: 'Lavandina',
-      categoria: 'Categoría 3',
+      categoria: '3',
       descripcion: 'Descripción del producto 4',
       precio: 15.50,
       medicion: 'c/u',
@@ -39,7 +39,7 @@ const productos = [
     },   {
       id: 5,
       title: 'Preservativo',
-      categoria: 'Categoría 3',
+      categoria: '3',
       descripcion: 'Descripción del producto 5',
       precio: 15.50,
       medicion: 'c/u',
@@ -47,7 +47,7 @@ const productos = [
     }, {
       id: 65,
       title: 'Cebolla',
-      categoria: 'Categoría 3',
+      categoria: '2',
       descripcion: 'Descripción del producto 5',
       precio: 15.50,
       medicion: 'kg',
@@ -55,7 +55,7 @@ const productos = [
     }, {
       id: 36,
       title: 'Vino',
-      categoria: 'Categoría 3',
+      categoria: '1',
       descripcion: 'Descripción del producto 5',
       precio: 15.50,
       medicion: 'c/u',
@@ -63,7 +63,7 @@ const productos = [
     }, {
       id: 436,
       title: 'Cigarrillo',
-      categoria: 'Categoría 3',
+      categoria: '3',
       descripcion: 'Descripción del producto 5',
       precio: 15.50,
       medicion: 'c/u',
@@ -72,7 +72,7 @@ const productos = [
     {
       id: 4336,
       title: 'Salame',
-      categoria: 'Categoría 3',
+      categoria: '1',
       descripcion: 'Descripción del producto 5',
       precio: 15.50,
       medicion: '100g',

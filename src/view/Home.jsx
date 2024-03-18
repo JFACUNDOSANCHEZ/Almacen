@@ -15,6 +15,12 @@ const Home = () => {
   const filteredProductos = productos.filter(producto =>
     producto.title.toLowerCase().includes(searchTerm.toLowerCase())
   );
+
+  const categoria1 = productos.filter(p => { return p.categoria == 1 })
+  const categoria2 = productos.filter(p => { return p.categoria == 2 })
+  const categoria3 = productos.filter(p => { return p.categoria == 3 })
+
+  console.log('aca esta la cate1' + categoria1);
   const addToCart = (product) => {
     setCartItems([...cartItems, product]); // Agrega el producto al carrito
   };
@@ -29,14 +35,14 @@ const Home = () => {
   };
   console.log(productos);
   return (
-    <div className=' w-[98%] justify-center mx-auto overflow-hidden max-w-screen-xl'>
+    <div className=' w-[95%] justify-center mx-auto overflow-hidden max-w-screen-xl'>
       <div >
         <Nav></Nav>
 
         <Carousel></Carousel>
       </div>
 
-      <div className='flex justify-center w-[97%] relative'>
+      <div className='flex justify-center w-[98%] relative'>
         <SearchBar searchTerm={searchTerm} onSearchTermChange={handleSearchTermChange} />
         <div className=''>
 
@@ -53,24 +59,46 @@ const Home = () => {
         </div>
       </div>
       <br />
-      <div >
-
-        <CarouselMenu></CarouselMenu>
+      <div className=' w-screen'>
       </div>
-      {
-        filteredProductos.length === 0 ?
-          <NotFound />
-          :
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {filteredProductos.map(p => {
-              return (
-                <div className='p-6 w-full md:w-[95%]' key={p.id}>
-                  <Card producto={p} addToCart={addToCart} ></Card>
-                </div>
-              );
-            })}
-          </div>
-      }
+      <div className='w-screen'>
+
+<br />
+       <h2 className=' font-bold'>Bebidas</h2>
+        <div className="flex overflow-x-auto">
+          {categoria1.map(p => (
+            <div className='p-6 w-full md:w-[95%]' key={p.id}>
+              <Card producto={p} addToCart={addToCart} />
+            </div>
+          ))}
+        </div>
+      </div>
+      
+      
+      <br />
+      <div className='w-screen'>
+      <h2 className=' font-bold'>Lacteos</h2>
+        <div className="flex overflow-x-auto">
+          {categoria2.map(p => (
+            <div className='p-6 w-full md:w-[95%]' key={p.id}>
+              <Card producto={p} addToCart={addToCart} />
+            </div>
+          ))}
+        </div>
+      </div>
+
+<br />
+
+      <div className='w-screen'>
+        <h2 className=' font-bold'>Cigarrillos</h2>
+        <div className="flex overflow-x-auto">
+          {categoria3.map(p => (
+            <div className='p-6 w-full md:w-[95%]' key={p.id}>
+              <Card producto={p} addToCart={addToCart} />
+            </div>
+          ))}
+        </div>
+      </div>
       <Carrito cartItems={cartItems} removeFromCart={removeFromCart} />
     </div>
   )

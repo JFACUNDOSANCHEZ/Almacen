@@ -2,17 +2,16 @@ import React from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
+import Card from '../view/Card';
 
-const CarouselMenu = () => {
+const CarouselMenu = ({productos}) => {
 
     const settings = {
         rtl: true,
         dots: false,
         infinite: true,
         speed: 2000, // Ajusta la velocidad a un valor más bajo
-        slidesToShow: 3,
+        slidesToShow: 4,
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 1500, // Aumenta el intervalo entre los cambios
@@ -20,36 +19,15 @@ const CarouselMenu = () => {
     };
 
 
-    const shadowColors = ['shadow-md shadow-green-600', 'shadow-md shadow-blue-600', 'shadow-md shadow-red-600', 'shadow-md shadow-yellow-600', 'shadow-md shadow-indigo-600'];
-
-    // Función para obtener un color de sombra aleatorio de la matriz
-    const getRandomShadowColor = () => {
-        return shadowColors[Math.floor(Math.random() * shadowColors.length)];
-    };
 
     return (
         <div className="font-bold">
-            <Slider {...settings}>
-                <div>
-                    <p className={`bg-slate-100 border gap-5 m-2 text-center rounded-full text-gray-700 p-1 ${getRandomShadowColor()}`}>Lacteos</p>
-                </div>
-                <div>
-                    <p className={`bg-slate-100 border gap-5 m-2 text-center rounded-full text-gray-700 p-1 ${getRandomShadowColor()}`}>Gaseosa</p>
-                </div>
-                <div>
-                    <p className={`bg-slate-100 border gap-5 m-2 text-center rounded-full text-gray-700 p-1 ${getRandomShadowColor()}`}>Cigarrillos</p>
-                </div>
-                <div>
-                    <p className={`bg-slate-100 border gap-5 m-2 text-center rounded-full text-gray-700 p-1 ${getRandomShadowColor()}`}>Limpieza</p>
-                </div>
-                <div>
-                    <p className={`bg-slate-100 border gap-5 m-2 text-center rounded-full text-gray-700 p-1 ${getRandomShadowColor()}`}>Vinos</p>
-                </div>
-                <div>
-                    <p className={`bg-slate-100 border gap-5 m-2 text-center rounded-full text-gray-700 p-1 ${getRandomShadowColor()}`}>Fiambre</p>
-                </div>
-            </Slider>
-        </div>
-    );
+      <Slider {...settings}>
+        {productos.map(producto => (
+          <Card key={producto.id} producto={producto} />
+        ))}
+      </Slider>
+    </div>
+    )
 };
 export default CarouselMenu;
