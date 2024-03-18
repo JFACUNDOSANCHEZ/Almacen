@@ -59,12 +59,12 @@ const productos = [
     },
       {
       id: 4,
-      title: 'Lavandina',
+      title: 'Malboro',
       categoria: '3',
       descripcion: 'Descripción del producto 4',
       precio: 15.50,
       medicion: 'c/u',
-      img:'https://arcencohogar.vtexassets.com/arquivos/ids/297412-800-800?v=637665760449770000&width=800&height=800&aspect=true'
+      img:'https://i0.wp.com/www.licoresentrerios.com/wp-content/uploads/2022/02/malboro-rojo.png?fit=387%2C410&ssl=1'
     },   {
       id: 5,
       title: 'Preservativo',
@@ -75,12 +75,12 @@ const productos = [
       img:'https://farmacityar.vtexassets.com/arquivos/ids/238781-800-auto?v=638144009985070000&width=800&height=auto&aspect=true'
     }, {
       id: 65,
-      title: 'Cebolla',
-      categoria: '4',
+      title: 'Camel',
+      categoria: '3',
       descripcion: 'Descripción del producto 5',
       precio: 15.50,
       medicion: 'kg',
-      img:'https://5aldia.cl/wp-content/uploads/2018/03/cebolla.jpg'
+      img:'https://dcdn.mitiendanube.com/stores/001/228/828/products/1847-bd49c1a26ef87b0c7c15999531925010-640-0.jpeg'
     }, {
       id: 36,
       title: 'Vino',
