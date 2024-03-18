@@ -12,9 +12,7 @@ import NotFound from '../componentes/NotFound'
 const Home = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [cartItems, setCartItems] = useState([]);
-  const filteredProductos = productos.filter(producto =>
-    producto.title.toLowerCase().includes(searchTerm.toLowerCase())
-  );
+ 
 
   const categoria1 = productos.filter(p => { return p.categoria == 1 })
   const categoria2 = productos.filter(p => { return p.categoria == 2 })
@@ -64,7 +62,7 @@ const Home = () => {
       <div className='w-screen'>
 
 <br />
-       <h2 className=' font-bold'>Bebidas</h2>
+       <h2 className=' font-bold text-2xl'>Bebidas</h2>
         <div className="flex overflow-x-auto">
           {categoria1.map(p => (
             <div className='p-6 w-full md:w-[95%]' key={p.id}>
@@ -77,7 +75,7 @@ const Home = () => {
       
       <br />
       <div className='w-screen'>
-      <h2 className=' font-bold'>Lacteos</h2>
+      <h2 className=' font-bold text-2xl'>Lacteos</h2>
         <div className="flex overflow-x-auto">
           {categoria2.map(p => (
             <div className='p-6 w-full md:w-[95%]' key={p.id}>
@@ -90,7 +88,7 @@ const Home = () => {
 <br />
 
       <div className='w-screen'>
-        <h2 className=' font-bold'>Cigarrillos</h2>
+      <h2 className=' font-bold text-2xl'>Cigarrillos</h2>
         <div className="flex overflow-x-auto">
           {categoria3.map(p => (
             <div className='p-6 w-full md:w-[95%]' key={p.id}>
